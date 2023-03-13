@@ -1,4 +1,5 @@
 :root {
+  //color palette
   --col-primary: #191d2b;
   --col-secondary: #27AE60;
   --col-white: #FFFFFF;
@@ -10,4 +11,7 @@
   --col-gray-4: #454e56;
   --col-gray-5: #2a2e35;
   --col-gray-6: #12181b;
+
+  //other
+  --shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }

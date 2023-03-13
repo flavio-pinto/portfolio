@@ -11,4 +11,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--col-black);
   font-size: 1.1rem;
+  color: var(--col-white);
+  transition: all 400ms ease-in-out;
 }

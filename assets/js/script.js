@@ -22,7 +22,8 @@ function sectionTransitions() {
   //Active section
   content.addEventListener('click', (event)=> {
     const id = event.target.dataset.id;
-    console.log(id);
+    console.log(event.target);
+    console.log(event.target.dataset);
     if(id) {
       //remove selected from other buttons
       sectionControls.forEach((btn) => {

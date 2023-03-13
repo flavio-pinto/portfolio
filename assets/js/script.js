@@ -1,5 +1,5 @@
 /* Body */
-const content = document.querySelectorAll('.content');
+const content = document.querySelector('.content');
 
 /* Control Buttons Script */
 const sections = document.querySelectorAll('.section');
@@ -18,4 +18,25 @@ function sectionTransitions() {
       this.className += ' btn-active';
     });
   }
+
+  //Active section
+  content.addEventListener('click', (event)=> {
+    const id = event.target.dataset.id;
+    console.log(id);
+    if(id) {
+      //remove selected from other buttons
+      sectionControls.forEach((btn) => {
+        btn.classList.remove('active');
+      })
+      event.target.classList.add('active');
+
+      //hide other sections
+      sections.forEach((section) => {
+        section.classList.remove('active')
+      })
+
+      const element = document.getElementById(id);
+      element.classList.add('active');
+    }
+  })
 }

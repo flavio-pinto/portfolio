@@ -297,3 +297,54 @@ section {
   background-color: var(--col-gray-5);
   transform: translateX(-50%);
 }
+
+/* TIMELINE */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
+.timeline-experience {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--col-gray-5);
+}
+.timeline-experience-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: var(--col-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.timeline-experience-icon i {
+  font-size: 1.3rem;
+}
+.timeline-experience-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--col-gray-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.timeline-experience h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.timeline-experience h5 span {
+  font-size: 1.2rem;
+  color: var(--col-gray-2);
+  font-weight: 500;
+}
+.timeline-experience p {
+  color: var(--col-gray-2);
+}

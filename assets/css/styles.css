@@ -214,21 +214,20 @@ section {
   transition: all 400ms ease-out;
 }
 
-/* ABOUT ME */
-.about-me-title {
+.section-title {
   text-align: center;
 }
-.about-me-title h2 {
+.section-title h2 {
   position: relative;
   text-transform: uppercase;
   font-size: 4rem;
   font-weight: 700;
 }
-.about-me-title h2 span {
+.section-title h2 span {
   color: var(--col-secondary);
   width: 100%;
 }
-.about-me-title h2 .title-bg-text {
+.section-title h2 .title-bg-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -240,6 +239,7 @@ section {
   font-weight: 800;
 }
 
+/* ABOUT ME */
 .about-container {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
@@ -347,4 +347,82 @@ section {
 }
 .timeline-experience p {
   color: var(--col-gray-2);
+}
+
+/* PORTFOLIO */
+.portfolio-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolio-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolio-projects .portfolio-item {
+  position: relative;
+}
+.portfolio-projects .portfolio-item:hover {
+  cursor: pointer;
+}
+.portfolio-projects .portfolio-item:hover .portfolio-item-hover {
+  opacity: 1;
+  transform: scale(1);
+}
+.portfolio-projects .portfolio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.portfolio-projects .portfolio-item-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--col-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 400ms ease-in-out;
+}
+.portfolio-projects .portfolio-item-hover h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--col-white);
+}
+.portfolio-projects .portfolio-item-hover .portfolio-item-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-projects .portfolio-item-hover .portfolio-item-icons .portfolio-icon {
+  background-color: var(--col-primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.portfolio-projects .portfolio-item-hover .portfolio-item-icons .portfolio-icon i {
+  font-size: 1.5rem;
+  color: var(--col-white);
+  margin: 0 1rem;
+}
+.portfolio-projects .portfolio-item-hover .portfolio-item-icons .portfolio-icon:hover {
+  background-color: var(--col-white);
+}
+.portfolio-projects .portfolio-item-hover .portfolio-item-icons .portfolio-icon:hover i {
+  color: var(--col-primary);
 }

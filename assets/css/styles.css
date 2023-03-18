@@ -14,6 +14,20 @@
   --br-small: 14px;
 }
 
+.light-mode {
+  --col-primary: #FFFFFF;
+  --col-secondary: #F56692;
+  --col-white: #454e56;
+  --col-black: #000000;
+  --col-gray-0: #f8f8f8;
+  --col-gray-1: #6c7983;
+  --col-gray-2: #6c7983;
+  --col-gray-3: #6c7983;
+  --col-gray-4: #454e56;
+  --col-gray-5: #f8f8f8;
+  --col-gray-6: #12181b;
+}
+
 * {
   margin: 0;
   padding: 0;

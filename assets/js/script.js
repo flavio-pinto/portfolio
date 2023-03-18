@@ -41,3 +41,11 @@ function sectionTransitions() {
     }
   })
 }
+
+//Switch Theme
+const themeSwitchBtn = document.querySelector('.theme-switch');
+
+themeSwitchBtn.addEventListener('click', ()=> {
+  let bodyElement = document.body;
+  bodyElement.classList.toggle('light-mode');
+})

@@ -102,6 +102,32 @@ section {
   }
 }
 
+.theme-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 3px 15px Orgba(0,0, 0, 0.3);
+  background-color: var(--col-gray-4);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+
+  &:active {
+    transform: translateY(-3px);
+  }
+
+  i {
+    font-size: 1.4rem;
+    color: var(--col-gray-2);
+    pointer-events: none;
+  }
+}
+
 /* HEADER */
 .header-content {
   display: grid;

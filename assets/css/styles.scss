@@ -370,6 +370,123 @@ section {
   }
 }
 
+/* CONTACTS */
+
+.contact-content {
+  display: flex;
+  padding-top: 3.5rem;
+
+  .contact-left {
+    flex: 2;
+
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+
+    .contact-info {
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+
+        .icon {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+
+          i {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+
+          }
+        }
+      }
+    }
+
+    .contacts-social-icons {
+      display: flex;
+      margin-top: 2rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 0.4rem;
+        color: var(--col-white);
+        background-color: var(--col-gray-5);
+        cursor: pointer;
+        justify-content: center;
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+          background-color: var(--col-secondary);
+
+          i {
+            color: var(--col-primary);
+          }
+        }
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .contact-right {
+    flex: 3;
+    margin-left: 3rem;
+
+    .contact-input-control {
+      margin: 1.5rem 0;
+
+      input, textarea {
+        width: 100%;
+        padding: 0.8rem 1.1rem;
+        background-color: var(--col-gray-5);
+        color: var(--col-white);
+        border-radius: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        border: none;
+        outline: none;
+        resize: none;
+      }
+    }
+
+    .contact-input-control:first-child {
+      display: flex;
+
+      :last-child {
+        margin-left: 1.5rem;
+      }
+    }
+    
+    .dl-btn {
+      margin-left: auto;
+    }
+  }
+}
+
 /* PORTFOLIO */
 
 .portfolio-text {

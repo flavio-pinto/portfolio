@@ -349,6 +349,100 @@ section {
   color: var(--col-gray-2);
 }
 
+/* CONTACTS */
+.contact-content {
+  display: flex;
+  padding-top: 3.5rem;
+}
+.contact-content .contact-left {
+  flex: 2;
+}
+.contact-content .contact-left h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contact-content .contact-left p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+.contact-content .contact-left .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-content .contact-left .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
+}
+.contact-content .contact-left .contact-info .contact-item .icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-content .contact-left .contact-info .contact-item .icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.contact-content .contact-left .contacts-social-icons {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-content .contact-left .contacts-social-icons a {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+  color: var(--col-white);
+  background-color: var(--col-gray-5);
+  cursor: pointer;
+  justify-content: center;
+  transition: all 400ms ease-in-out;
+}
+.contact-content .contact-left .contacts-social-icons a:hover {
+  background-color: var(--col-secondary);
+}
+.contact-content .contact-left .contacts-social-icons a:hover i {
+  color: var(--col-primary);
+}
+.contact-content .contact-left .contacts-social-icons a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.contact-content .contact-right {
+  flex: 3;
+  margin-left: 3rem;
+}
+.contact-content .contact-right .contact-input-control {
+  margin: 1.5rem 0;
+}
+.contact-content .contact-right .contact-input-control input, .contact-content .contact-right .contact-input-control textarea {
+  width: 100%;
+  padding: 0.8rem 1.1rem;
+  background-color: var(--col-gray-5);
+  color: var(--col-white);
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  resize: none;
+}
+.contact-content .contact-right .contact-input-control:first-child {
+  display: flex;
+}
+.contact-content .contact-right .contact-input-control:first-child :last-child {
+  margin-left: 1.5rem;
+}
+.contact-content .contact-right .dl-btn {
+  margin-left: auto;
+}
+
 /* PORTFOLIO */
 .portfolio-text {
   padding: 2rem 0;

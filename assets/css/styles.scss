@@ -23,7 +23,7 @@ a {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   color: var(--col-white);
   overflow: hidden;
 }
@@ -603,3 +603,4 @@ section {
   }
 }
 
+@import 'partials/media';

@@ -155,7 +155,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 }
 .header-content-left {
   display: flex;
@@ -299,33 +299,33 @@ section {
   justify-content: flex-end;
 }
 
-.about-stats {
+.about-skills {
   padding-bottom: 4rem;
 }
-.about-stats .skills {
+.about-skills .skills {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 2rem;
 }
-.about-stats .skills .skill {
+.about-skills .skills .skill {
   text-align: center;
 }
-.about-stats .skills .skill:hover {
+.about-skills .skills .skill:hover {
   transition: all 400ms ease-in-out;
   transform: scale(1.3);
 }
-.about-stats .skills .skill img {
+.about-skills .skills .skill img {
   width: 50%;
 }
 
-.stat-title {
+.about-title {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
 }
-.stat-title::before {
+.about-title::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -559,7 +559,20 @@ section {
   color: var(--col-primary);
 }
 
+/* SMALL SCREENS */
 @media screen and (max-width: 600px) {
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  .section-title h2 span {
+    font-size: 2.5rem;
+  }
+  .section-title h2 .title-bg-text {
+    font-size: 3rem;
+  }
   header {
     padding: 0;
   }
@@ -575,7 +588,7 @@ section {
     width: 90%;
   }
   .header-content-right {
-    padding: 2rem !important;
+    padding: 0 !important;
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
@@ -600,4 +613,39 @@ section {
   .controls .control {
     margin: 1rem 0.3rem;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    padding-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .about-skills .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content .contact-right {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content .contact-right .contact-input-control:first-child {
+    flex-direction: column;
+  }
+  .contact-content .contact-right .contact-input-control:first-child input:last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
 }
+/* @media screen and (max-width: 1432px) {
+
+} */

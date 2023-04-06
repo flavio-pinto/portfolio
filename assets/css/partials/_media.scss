@@ -1,4 +1,23 @@
+/* SMALL SCREENS */
+
 @media screen and (max-width: 600px) {
+
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+
+    span {
+      font-size: 2.5rem;
+    }
+
+    .title-bg-text {
+      font-size: 3rem;
+    }
+  }
+
   header {
     padding: 0;
   }
@@ -20,7 +39,7 @@
   }
 
   .header-content-right {
-    padding: 2rem !important;
+    padding: 0 !important;
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
@@ -49,4 +68,49 @@
       margin: 1rem 0.3rem;
     }
   }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .about {
+    padding-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about-skills .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+
+    .contact-right {
+      margin-left: 0;
+      margin-top: 2.5rem;
+
+      .contact-input-control:first-child {
+        flex-direction: column;
+
+        input:last-child {
+          margin-left: 0;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
 }
+
+/* @media screen and (max-width: 1432px) {
+
+} */

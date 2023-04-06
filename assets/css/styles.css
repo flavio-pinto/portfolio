@@ -573,6 +573,47 @@ section {
   .section-title h2 .title-bg-text {
     font-size: 3rem;
   }
+  .theme-switch {
+    width: 50px;
+    height: 50px;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    padding-top: 2.5rem;
+    grid-template-columns: 1fr;
+  }
+  .about-skills .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .portfolio-projects {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 7rem 3rem;
+  }
+  .section-title h2 {
+    font-size: 3rem;
+  }
+  .section-title h2 span {
+    font-size: 3rem;
+  }
+  .section-title h2 .title-bg-text {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .section {
+    padding: 7rem 6rem;
+  }
   header {
     padding: 0;
   }
@@ -596,10 +637,6 @@ section {
   .header-content-right .my-name {
     font-size: 2.5rem !important;
   }
-  .theme-switch {
-    width: 50px;
-    height: 50px;
-  }
   .controls {
     width: 100%;
     top: auto;
@@ -611,25 +648,38 @@ section {
     background-color: var(--col-gray-5);
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 0.6rem 1rem !important;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .section-title h2 {
+    font-size: 4rem;
+  }
+  .section-title h2 span {
+    font-size: 4rem;
+  }
+  .section-title h2 .title-bg-text {
+    font-size: 4.5rem;
   }
   .about-container {
     grid-template-columns: 1fr;
   }
   .about {
     padding-top: 2.5rem;
-    grid-template-columns: 1fr;
-  }
-  .about-skills .skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .timeline {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
   }
   .portfolio-projects {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1432px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 7rem 11rem;
+  }
+  .about-skills .skills {
+    grid-template-columns: repeat(4, 1fr);
   }
   .contact-content {
     flex-direction: column;
@@ -646,6 +696,3 @@ section {
     margin-top: 1.5rem;
   }
 }
-/* @media screen and (max-width: 1432px) {
-
-} */

@@ -1,51 +1,13 @@
-/* Body */
-const content = document.querySelector('.content');
-
-/* Control Buttons Script */
-const sections = document.querySelectorAll('.section');
-const sectionControls = document.querySelectorAll('.controls');
-const sectionControlBtns = document.querySelectorAll('.control');
-
-sectionTransitions();
-
-/* FUNCTIONS */
-function sectionTransitions() {
-  //Active button
-  for(let i = 0; i < sectionControlBtns.length; i++) {
-    sectionControlBtns[i].addEventListener('click', function() {
-      let currentBtn = document.querySelector('.btn-active');
-      currentBtn.className = currentBtn.className.replace('btn-active', '');
-      this.className += ' btn-active';
-    });
-  }
-
-  //Active section
-  content.addEventListener('click', (event)=> {
-    const id = event.target.dataset.id;
-    console.log(event.target);
-    console.log(event.target.dataset);
-    if(id) {
-      //remove selected from other buttons
-      sectionControls.forEach((btn) => {
-        btn.classList.remove('active');
+(function () {
+  [...document.querySelectorAll(".control")].forEach(button => {
+      button.addEventListener("click", function() {
+          document.querySelector(".active-btn").classList.remove("active-btn");
+          this.classList.add("active-btn");
+          document.querySelector(".active").classList.remove("active");
+          document.getElementById(button.dataset.id).classList.add("active");
       })
-      event.target.classList.add('active');
-
-      //hide other sections
-      sections.forEach((section) => {
-        section.classList.remove('active')
-      })
-
-      const element = document.getElementById(id);
-      element.classList.add('active');
-    }
+  });
+  document.querySelector(".theme-btn").addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
   })
-}
-
-//Switch Theme
-const themeSwitchBtn = document.querySelector('.theme-switch');
-
-themeSwitchBtn.addEventListener('click', ()=> {
-  let bodyElement = document.body;
-  bodyElement.classList.toggle('light-mode');
-})
+})();

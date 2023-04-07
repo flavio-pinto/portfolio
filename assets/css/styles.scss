@@ -29,6 +29,10 @@ header {
   padding: 0 !important;
 }
 
+.image, .image img {
+  background-color: transparent !important;
+}
+
 section {
   min-height: 100vh;
   width: 100%;

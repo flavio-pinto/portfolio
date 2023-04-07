@@ -15,12 +15,12 @@
     padding-bottom: 6rem;
   }
 
-  .left-header {
-    .h-shape {
+  .header-left {
+    .clip-shape {
       display: none;
     }
   }
-  .right-header {
+  .header-right {
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;
@@ -31,7 +31,7 @@
       padding-top: 3rem;
     }
   }
-  .header-content .left-header .image {
+  .header-content .header-left .photo {
     margin: 0 auto;
     width: 90%;
   }
@@ -69,28 +69,28 @@
     padding: 2rem 2.5rem !important;
   }
 
-  .portfolios {
+  .portfolio-projects {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
 
-  .contact-content-con {
+  .contact-content-container {
     flex-direction: column;
-    .right-contact {
+    .contact-right {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
-  .contact-content-con .right-contact .i-c-2 {
+  .contact-content-container .contact-right .i-c-2 {
     flex-direction: column;
   }
-  .contact-content-con .right-contact .i-c-2 :last-child {
+  .contact-content-container .contact-right .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
   }
 
-  .contact-content-con .right-contact {
+  .contact-content-container .contact-right {
     margin-bottom: 6rem;
   }
 
@@ -131,22 +131,22 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .contact-content-con {
+  .contact-content-container {
     flex-direction: column;
-    .right-contact {
+    .contact-right {
       margin-left: 0;
       margin-top: 2.5rem;
     }
   }
-  .contact-content-con .right-contact .i-c-2 {
+  .contact-content-container .contact-right .i-c-2 {
     flex-direction: column;
   }
-  .contact-content-con .right-contact .i-c-2 :last-child {
+  .contact-content-container .contact-right .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
   }
 
-  .contact-content-con .right-contact {
+  .contact-content-container .contact-right {
     margin-bottom: 6rem;
   }
 
@@ -160,15 +160,15 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .portfolios {
+  .portfolio-projects {
     grid-template-columns: repeat(2, 1fr);
   }
-  .header-content .right-header {
+  .header-content .header-right {
     padding-right: 9rem;
   }
 }
 @media screen and (max-width: 660px) {
-  .portfolios {
+  .portfolio-projects {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -202,16 +202,16 @@
     padding-bottom: 6rem;
   }
 
-  .left-header {
-    .h-shape {
+  .header-left {
+    .clip-shape {
       display: none;
     }
-    .image {
+    .photo {
       width: 90% !important;
       margin: 0 auto !important;
     }
   }
-  .right-header {
+  .header-right {
     grid-row: 1;
     padding-right: 0rem !important;
     width: 90%;

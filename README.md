@@ -19,4 +19,4 @@ Sito web statico deployato su Github Pages
 **Deploy sito web**
 ===
 
-(https://weather-app-flavio-pinto.netlify.app/)
+(https://flavio-pinto.github.io/portfolio/)

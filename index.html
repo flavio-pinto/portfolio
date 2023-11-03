@@ -382,17 +382,17 @@
               </div>
             </div>
             <div class="contact-right">
-              <form action="" class="contact-form">
+              <form id="myForm" action="https://formspree.io/f/mdorjgbq" method="POST" class="contact-form">
                 <div class="input-control i-c-2">
-                  <input type="text" required placeholder="Il tuo nome" />
-                  <input type="email" required placeholder="La tua email" />
+                  <input type="text" name="nome" required placeholder="Il tuo nome" />
+                  <input type="email" name="email" required placeholder="La tua email" />
                 </div>
                 <div class="input-control">
-                  <input type="text" required placeholder="Inserisci oggetto" />
+                  <input type="text" name="oggetto" required placeholder="Inserisci oggetto" />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name=""
+                    name="testo"
                     id=""
                     cols="15"
                     rows="8"
@@ -400,11 +400,10 @@
                   ></textarea>
                 </div>
                 <div class="submit-btn">
-                  <a href="assets/docs/cv.pdf" target="_blank" class="main-btn">
-                    <span class="btn-text">Download CV</span>
+                  <a id="submitButton" target="_blank" href="#" class="main-btn">
+                    <span class="btn-text">Invia</span>
                     <span class="btn-icon"
-                      ><i class="fa-solid fa-download"></i
-                    ></span>
+                      ><i class="fa-regular fa-paper-plane"></i></span>
                   </a>
                 </div>
               </form>

@@ -10,4 +10,9 @@
   document.querySelector(".theme-switch").addEventListener("click", () => {
     document.body.classList.toggle("light-mode")
   })
+  document.getElementById("submitButton").addEventListener("click", function(e) {
+    e.preventDefault()
+    document.getElementById("myForm").submit()
+    document.getElementById("myForm").reset()
+  });
 })()

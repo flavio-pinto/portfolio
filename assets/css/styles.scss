@@ -217,6 +217,12 @@ section {
     grid-gap: 2rem;
     .skill {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      gap: 4px;
       &:hover {
         transition: all 400ms ease-in-out;
         transform: scale(1.3);

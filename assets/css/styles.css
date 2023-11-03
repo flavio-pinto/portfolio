@@ -234,7 +234,7 @@ section {
 }
 .about-skills .skills {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-gap: 2rem;
 }
 .about-skills .skills .skill {

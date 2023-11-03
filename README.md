@@ -16,6 +16,7 @@ Sito web statico deployato su Github Pages
 * Google Fonts
 * FontAwesome
 * https://icons-for-free.com/ (per le icone delle tecnologie)
+* Formspree
 
 **Deploy sito web**
 ===

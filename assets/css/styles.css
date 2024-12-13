@@ -57,6 +57,12 @@ header {
   padding: 0 !important;
 }
 
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .photo, .photo img {
   background-color: transparent !important;
 }
